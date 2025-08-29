@@ -1,0 +1,214 @@
+        /* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+.nav-list li a:hover {
+    color: #4CAF50;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Box Model */
+.box-model-box {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #2196F3;
+    background-color: #e0f7fa;
+}
+
+/* Position */
+.relative-box {
+    position: relative;
+    background-color: #FFEB3B;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF5722;
+    color: white;
+    padding: 10px;
+}
+
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+.sticky-container {
+    height: 150px;
+    overflow: auto;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #9C27B0;
+    color: white;
+    padding: 10px;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #FF9800;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Z-Index */
+.zindex-section {
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+}
+
+.z-box {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.box1 { background-color: #4CAF50; top: 20px; left: 20px; z-index:1; }
+.box2 { background-color: #FF5722; top: 60px; left: 60px; z-index:5; }
+.box3 { background-color: #2196F3; top:100px; left:100px; z-index:10; }
+
+/* Animation & Hover */
+.hover-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #FF9800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.hover-box:hover {
+    transform: scale(1.2);
+    background-color: #FF5722;
+}
+
+.animation-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: rotateBox 3s linear infinite; /* Continuous animation */
+}
+
+/* Keyframes for rotation */
+@keyframes rotateBox {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); background-color: #2196F3; }
+    100% { transform: rotate(360deg); background-color: #4CAF50; }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .flex-container { flex-direction: column; }
+    .grid-container { grid-template-columns: 1fr; }
+    .nav-list { flex-direction: column; }
+    .nav-list li { margin: 10px 0; }
+}
