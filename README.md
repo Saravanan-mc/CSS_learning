@@ -1,6 +1,6 @@
 🎨 CSS Learning
-📘 Description
 
+📘 Description
 This repository is designed to help learners understand the fundamentals of CSS (Cascading Style Sheets) and how it is used to style and design web pages. It provides step-by-step examples, exercises, and small projects to practice different styling techniques.
 
 🌐 What You’ll Learn
@@ -23,10 +23,10 @@ Best practices for clean and maintainable stylesheets
 
 🚀 Why Learn CSS?
 
-CSS brings life and design to HTML structures
+🎨 Brings life and design to HTML structures
 
-Essential for frontend development and UI/UX design
+💻 Essential for frontend development and UI/UX design
 
-Helps in building responsive and professional-looking websites
+📱 Helps in building responsive and professional-looking websites
 
-Acts as the foundation before moving into advanced frameworks like Bootstrap, Tailwind, or Sass
+🧩 Acts as the foundation before moving into advanced frameworks like Bootstrap, Tailwind, or Sass
