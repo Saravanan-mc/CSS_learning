@@ -1,4 +1,4 @@
-        /* Reset & Base */
+/*Reset & Base*/
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +6,24 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f5f5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.4;
+    background-color: aliceblue;
 }
 
-/* Header */
+/*Header*/
 .header {
     text-align: center;
     background-color: #4CAF50;
     color: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
-/* Navigation */
+/*Navigation*/
 .navbar {
     background-color: #333;
+    justify-content: center;
+    list-style: none;
 }
 
 .nav-list {
@@ -31,43 +33,45 @@ body {
 }
 
 .nav-list li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .nav-list li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 15px 0;
+    padding: 15px 1px;
 }
 
 .nav-list li a:hover {
-    color: #4CAF50;
+    color: #ff00ae;
 }
 
-/* Sections */
+/*Sections*/
 .section {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 1000px;
-    background-color: white;
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 
-/* Box Model */
+/*Box Model*/
 .box-model-box {
     margin: 20px;
     padding: 20px;
     border: 3px solid #2196F3;
-    background-color: #e0f7fa;
+    background-color: #93f2ff;
+    border-radius: 20px;
 }
 
-/* Position */
+/*Position*/
 .relative-box {
     position: relative;
     background-color: #FFEB3B;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .absolute-box {
@@ -77,6 +81,7 @@ body {
     background-color: #FF5722;
     color: white;
     padding: 10px;
+    border-radius: 12px;
 }
 
 .fixed-box {
@@ -86,24 +91,25 @@ body {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .sticky-container {
     height: 150px;
-    overflow: auto;
     background-color: #ddd;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .sticky-box {
     position: sticky;
     top: 0;
-    background-color: #9C27B0;
     color: white;
+    background-color: #3d7bad;
     padding: 10px;
+    border-radius: 10px;
 }
 
-/* Flexbox */
+/*Flexbox*/
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -122,25 +128,25 @@ body {
     border-radius: 5px;
 }
 
-/* Grid */
-.grid-container {
+/*Grid*/
+.gird-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    gap:15px;
     margin-top: 20px;
 }
 
-.grid-item {
+.grid-item{
     background-color: #FF9800;
     padding: 40px;
     text-align: center;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-/* Z-Index */
-.zindex-section {
-    position: relative;
+/*Z-Index*/
+.zindex-section{
+    position:relative;
     height: 300px;
     background-color: #fff;
 }
@@ -157,27 +163,27 @@ body {
     border-radius: 10px;
 }
 
-.box1 { background-color: #4CAF50; top: 20px; left: 20px; z-index:1; }
-.box2 { background-color: #FF5722; top: 60px; left: 60px; z-index:5; }
+.box1 { background-color: #6a4caf; top: 20px; left: 20px; z-index:80; }
+.box2 { background-color: #FF5722; top: 60px; left: 60px; z-index:100; }
 .box3 { background-color: #2196F3; top:100px; left:100px; z-index:10; }
 
-/* Animation & Hover */
+/*Animation & Hover*/
 .hover-box {
     width: 200px;
     height: 100px;
     margin: 20px auto;
-    background-color: #FF9800;
+    background-color: #0b7dff;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    transition: all 0.3s ease; /* Smooth hover transition */
+    transition: all 0.3s ease;
 }
 
 .hover-box:hover {
     transform: scale(1.2);
-    background-color: #FF5722;
+    background-color: #009a00;
 }
 
 .animation-box {
@@ -186,26 +192,26 @@ body {
     margin: 20px auto;
     background-color: #4CAF50;
     border-radius: 50%;
-    animation: rotateBox 3s linear infinite; /* Continuous animation */
+    animation: rotateBox 3s linear infinite;
 }
 
-/* Keyframes for rotation */
+/*Keyframes for rotation*/
 @keyframes rotateBox {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(180deg); background-color: #2196F3; }
     100% { transform: rotate(360deg); background-color: #4CAF50; }
 }
 
-/* Footer */
-.footer {
+/*Footer*/
+.footer{
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
+    background-color: #000000;
+    color:white;
+    margin-top:20px;
 }
 
-/* Responsive */
+/*Responsive*/
 @media(max-width:768px){
     .flex-container { flex-direction: column; }
     .grid-container { grid-template-columns: 1fr; }
